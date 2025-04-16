@@ -1,6 +1,6 @@
-import Footer from '@/components/App/Footer';
 import Navbar from '@/components/App/Navbar';
 import { type PropsWithChildren } from 'react';
+import Footer from '@/components/App/Footer';
 
 interface AuthLayoutProps {
     name?: string;
@@ -19,7 +19,7 @@ export default function AuthenticatedLayout({ children, title, description }: Pr
                 </div>
                 {children}
             </div>
-            <Footer />
+          <Footer />
         </div>
     );
 }

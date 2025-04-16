@@ -8,7 +8,7 @@ function Navbar() {
         <div className="navbar bg-base-100 shadow-sm">
             <div className="flex-1">
                 <Link href="/" className="btn btn-ghost text-xl">
-                    SideHustl
+                   S3RVHUB
                 </Link>
             </div>
             <div className="flex-none space-x-0.5">
