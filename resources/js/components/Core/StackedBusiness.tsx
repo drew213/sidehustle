@@ -132,7 +132,7 @@ const StackedBusiness = () => {
   );
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="sync">
       <Card {...cardData[currentCard]} />
     </AnimatePresence>
   );

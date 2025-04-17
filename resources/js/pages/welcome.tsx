@@ -4,6 +4,7 @@ import StackedBusiness from '@/components/Core/StackedBusiness';
 import AuthenticatedLayout from '@/layouts/auth/authenticated-layout';
 import { Head } from '@inertiajs/react';
 import ChangingHeader from '@/components/Core/ChangingHeader';
+import ReviewComponent from '@/components/Core/ReviewComponent';
 
 //import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.esm';
 
@@ -16,7 +17,7 @@ export default function Welcome() {
             </Head>
 
             <div className="flex min-h-screen flex-col items-center bg-[#FDFDFC] p-6 pb-20 text-white sm:justify-between lg:justify-center lg:p-8 dark:bg-[#0a0a0a]">
-                <div className="relative min-h-screen min-w-screen">
+                <div className="relative min-h-screen min-w-[95vw]">
                     <div className="absolute inset-0 z-0 bg-[url('/serv.png')] bg-cover bg-center bg-no-repeat" />
                     <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/60 text-white">
                         <header className="text-center">
@@ -25,7 +26,7 @@ export default function Welcome() {
                     </div>
                 </div>
 
-                <section className="">
+                <section className="py-20 px-4">
                     <div className="hero bg-grey-200 min-h-[300px] text-white">
                         <div className="hero-content flex-col lg:flex-row">
                             <img src="/austin-ramsey-rbi4q0-b-8g-unsplash.jpg" className="max-w-[200px] rounded-lg shadow-2xl" alt="Stock" />
@@ -47,13 +48,19 @@ export default function Welcome() {
                         </div>
                     </div>
                 </section>
-                <section className="">
-                    <StackedBusiness />
-                </section>
+              <section className="py-20 px-4 bg-[#0a0a0a]">
+                <div className="container mx-auto max-w-5xl">
+                  <StackedBusiness />
+                </div>
+              </section>
 
-                <section className="">
+                <section className="py-20 px-4">
                     <List />
                 </section>
+
+              <section className="py-20 px-4">
+                <ReviewComponent />
+              </section>
             </div>
         </AuthenticatedLayout>
     );
