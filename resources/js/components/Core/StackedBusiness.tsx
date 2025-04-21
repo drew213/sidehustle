@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { router } from '@inertiajs/react';
 
 const StackedBusiness = () => {
   const [currentCard, setCurrentCard] = useState<number>(0);
@@ -120,7 +121,7 @@ const StackedBusiness = () => {
         <div className="text-center md:text-left mb-4 md:mb-0 md:pr-4">
           <h1 className="text-3xl md:text-5xl font-bold">{title}</h1>
           <p className="py-3 md:py-6">{text}</p>
-          <button className="btn btn-primary">Explore Now</button>
+          <button className="btn btn-primary" onClick={() => (window.location.href = route('categories'))}>Explore Now</button>
         </div>
         <img
           src={image}

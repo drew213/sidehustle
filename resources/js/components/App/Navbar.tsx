@@ -7,7 +7,7 @@ function Navbar() {
   const { user } = auth;
 
   return (
-    <nav className="navbar bg-base-100 px-4 shadow-md sticky top-0 z-50">
+    <nav className="navbar bg-base-100 shadow-md sticky top-0 z-50 sm:min-w-full">
       {/* Brand Logo / Name */}
       <div className="flex-1">
         <Link href="/" className="text-xl font-bold btn btn-ghost normal-case">
@@ -110,7 +110,7 @@ function Navbar() {
             <Link href={route('login')} className="btn btn-ghost">
               Login
             </Link>
-            <Link href={route('register')} className="btn btn-primary">
+            <Link href={route('register')} className="btn btn-ghost">
               Register
             </Link>
           </Fragment>
